@@ -19,9 +19,7 @@ const UserCard = ({ user, deleteUserById, setUpdateUser, setIsFormClose }) => {
       </ul>
       <footer className='article_buttons'>
         <img onClick={() => deleteUserById(user.id)} src={imagetrash} alt="img" />
-
         <img onClick={getInfoupdateCar} src={imagedraw} alt="img" />
-
       </footer>
     </article>
   )

@@ -74,34 +74,32 @@ function App() {
     <div className="App_container">
       
         <div className='App_container_button'>
-      
           <button onClick={handleClick} className='button_add'>+ Create new user</button>
-         
         </div>
         
-      <div className={` ${isformClose ? 'container_form_hidden' : 'container_form'}`}>
+        <div className={` ${isformClose ? 'container_form_hidden' : 'container_form'}`}>
 
-        <FormUsers
+         <FormUsers
           createNewUser={createNewUser}
           updateUser={updateUser}
           setUpdateUser={setUpdateUser}
           updateUserCard={updateUserCard}
           setIsFormClose={setIsFormClose} />
-      </div>
+        </div>
 
-      <div className='container_cards'>
-        {
-          users?.map(user => (
-            <UserCard
-              key={user.id}
-              user={user}
-              deleteUserById={deleteUserById}
-              setUpdateUser={setUpdateUser}
-              setIsFormClose={setIsFormClose}
-            />
+        <div className='container_cards'>
+          {
+            users?.map(user => (
+              <UserCard
+               key={user.id}
+               user={user}
+               deleteUserById={deleteUserById}
+               setUpdateUser={setUpdateUser}
+               setIsFormClose={setIsFormClose}
+               />
           ))
         }
-      </div>
+        </div>
 
 
 

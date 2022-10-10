@@ -11,15 +11,15 @@ body {
 
 /*======================APP CSS======================*/
 
-.App_container_button{
+.App_container_button {
     display: flex;
     width: 1400px;
     height: 40px;
     justify-content: center;
     position: absolute;
-    top:20px;
+    top: 20px;
     left: 250px;
-   
+
 }
 
 .button_add {
@@ -33,7 +33,7 @@ body {
     cursor: pointer;
     border-radius: 10px;
     border-style: none;
-  
+
 }
 
 .button_add:hover {
@@ -51,8 +51,8 @@ body {
     gap: 20px;
     justify-content: center;
     z-index: -2;
-    
-    
+
+
 }
 
 .article_card {
@@ -134,9 +134,7 @@ body {
     transform: rotate(10deg)
 }
 
-
-
-/*======================APP FORM======================*/
+/*=====================APP FORM=====================*/
 .container_form {
     width: 100%;
     min-height: 100vh;
